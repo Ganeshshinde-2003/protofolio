@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Mainpage-container {
+  height: 100vh;
+  background-color: rgb(36, 34, 34);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-left {
+  background-color: yellow;
+  height: 60%;
+  width: 40%;
+}
+.main-right {
+  background-color: red;
+  height: 60%;
+  width: 40%;
+}
