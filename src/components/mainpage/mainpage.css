@@ -1,22 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Tourney:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 .Mainpage-container {
+  position: relative;
   height: 100vh;
   background-color: rgb(36, 34, 34);
   display: flex;
   justify-content: center;
-  align-items: center;
 }
+.Mainpage-container > :first-child {
+  position: absolute;
+  height: 25rem;
+  z-index: 5;
+  top: 30%;
+  left: 10%;
+  transform: rotate(90deg);
+  animation: crystall 2s infinite ease-in;
+}
+/* @keyframes crystall {
+  0% {
+    top: 25%;
+    height: 23rem;
+  }
+  50% {
+    top: 28%;
+    height: 24rem;
+  }
+  100% {
+    top: 30%;
+    height: 25rem;
+  }
+} */
 .main-left {
-  background-color: yellow;
+  /* background-color: yellow; */
+  margin-top: 5%;
+  height: 60%;
+  width: 40%;
+  z-index: 10;
+  /* overflow: hidden; */
+}
+.main-left > img {
+  border: 5px solid white;
+  padding: 0px 10px;
+  padding-top: 46px;
+  border-radius: 48% 48% 0% 0%;
+  outline: 4px solid white;
+  /* outline-offset: 17px; */
+  animation: anemi 3s infinite linear;
+}
+
+@keyframes anemi {
+  0% {
+    outline-offset: 0px;
+  }
+  50% {
+    outline-offset: 17px;
+  }
+  100% {
+    outline-offset: 0px;
+  }
+}
+
+.main-right {
+  /* background-color: yellow; */
+  position: relative;
+  color: white;
+  margin-top: 5%;
   height: 60%;
   width: 40%;
 }
-.main-right {
-  background-color: red;
-  height: 60%;
-  width: 40%;
+.main-right h1 {
+  display: block;
+  font-size: 50px;
+  float: left;
+  font-family: "Tourney", cursive;
+}
+.main-right > p {
+  margin-top: 60px;
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Abril Fatface", cursive;
+}
+.main-right p span {
+  font-size: 40px;
+  color: blanchedalmond;
+}
+.main-right > :nth-child(3) {
+  margin-top: 10px;
 }
