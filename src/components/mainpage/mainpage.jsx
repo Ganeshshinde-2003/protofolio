@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./mainpage.css";
 import myimage from "../images/photo.png";
 import crystal from "../images/crystal.png";
@@ -19,8 +20,10 @@ const Mainpage = () => {
           currently 21 years old and eager to find real world problems in the
           web development field so you can demonstrate my skills and abilities.
         </p>
-        <p>Loves to learn new things in my field</p>
-        <button>MORE</button>
+        <p>Loves to learn new things in my field....</p>
+        <Link className="button-89" to="/home">
+          Know More
+        </Link>
       </div>
     </div>
   );

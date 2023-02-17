@@ -8,39 +8,29 @@
 }
 .Mainpage-container {
   position: relative;
-  height: 100vh;
+  height: 100%;
+  padding: 30px 30px;
   background-color: rgb(36, 34, 34);
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  gap: 200px;
+  padding: 100px 100px;
+  overflow-y: hidden;
 }
 .Mainpage-container > :first-child {
   position: absolute;
   height: 25rem;
   z-index: 5;
-  top: 30%;
-  left: 10%;
-  transform: rotate(90deg);
+  top: 40%;
+  left: 15%;
+  transform: rotate(123deg);
   animation: crystall 2s infinite ease-in;
 }
-/* @keyframes crystall {
-  0% {
-    top: 25%;
-    height: 23rem;
-  }
-  50% {
-    top: 28%;
-    height: 24rem;
-  }
-  100% {
-    top: 30%;
-    height: 25rem;
-  }
-} */
+
 .main-left {
   /* background-color: yellow; */
   margin-top: 5%;
   height: 60%;
-  width: 40%;
   z-index: 10;
   /* overflow: hidden; */
 }
@@ -72,7 +62,6 @@
   color: white;
   margin-top: 5%;
   height: 60%;
-  width: 40%;
 }
 .main-right h1 {
   display: block;
@@ -94,4 +83,71 @@
 }
 .main-right > :nth-child(3) {
   margin-top: 10px;
+}
+
+.button-89 {
+  --b: 3px; /* border thickness */
+  --s: 0.45em; /* size of the corner */
+  --color: white;
+
+  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.6em;
+  text-decoration: none;
+  font-size: 16px;
+  float: left;
+  border: 0;
+  margin-top: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: 0.05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: rgb(36, 34, 34);
+}
+@media screen and (max-width: 1000px) {
+  .Mainpage-container > :first-child {
+    display: none;
+  }
+  .Mainpage-container {
+    overflow-x: hidden;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 15px;
+  }
+  .main-left > img {
+    height: 250px;
+  }
+  .main-right {
+    margin: 0 17px;
+  }
+  .main-right > h1 {
+    font-size: 36px;
+  }
+  .main-right p span {
+    font-size: 25px;
+  }
+  .main-right p {
+    font-size: 1rem;
+  }
 }
