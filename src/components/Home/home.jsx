@@ -3,13 +3,15 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { GoThreeBars } from "react-icons/go";
+import { FaTimes } from "react-icons/fa";
 import "./home.css";
 
 const Home = () => {
   const [show, setShow] = useState(true);
-
+  const [menu, setmenu] = useState(true);
   const toggleMenu = () => {
     setShow((show) => !show);
+    setmenu(!menu);
   };
   return (
     <div className="home">
@@ -23,7 +25,7 @@ const Home = () => {
 
         <div className="right-navbar">
           <div className="bars" onClick={toggleMenu}>
-            <GoThreeBars />
+            {menu ? <FaTimes /> : <GoThreeBars />}
           </div>
           <div className="Links" style={{ display: show ? "flex" : "none" }}>
             <Link className="header-links" to="#">

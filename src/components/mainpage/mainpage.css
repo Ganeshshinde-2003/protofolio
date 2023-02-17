@@ -129,6 +129,7 @@
     display: none;
   }
   .Mainpage-container {
+    height: 100vh;
     overflow-x: hidden;
     flex-direction: column;
     justify-content: center;
