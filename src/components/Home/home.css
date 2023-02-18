@@ -65,3 +65,23 @@
     text-align: left;
   }
 }
+.main {
+  width: 100%;
+  height: auto;
+}
+.hero-section-one {
+  width: 1000px;
+  height: 400px;
+  display: flex;
+  margin: 0 auto;
+}
+.text-part {
+  width: 50%;
+  height: 100%;
+  background-color: yellow;
+}
+.image-part {
+  width: 50%;
+  height: 100%;
+  background-color: red;
+}

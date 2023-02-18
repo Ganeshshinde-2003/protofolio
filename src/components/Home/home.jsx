@@ -43,6 +43,12 @@ const Home = () => {
           </div>
         </div>
       </header>
+      <div className="main">
+        <div className="hero-section-one">
+          <div className="text-part"></div>
+          <div className="image-part"></div>
+        </div>
+      </div>
     </div>
   );
 };
