@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Tourney:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+/* header part css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Abril Fatface", cursive;
+}
 .home {
   position: relative;
   width: 100%;
@@ -75,6 +83,9 @@
     text-align: left;
   }
 }
+
+/* main section css  */
+
 .main {
   overflow-x: hidden;
   width: 100%;
@@ -132,7 +143,7 @@
   margin-bottom: 10px;
 }
 .me {
-  color: blueviolet;
+  color: rgb(192, 77, 19);
   font-size: 35px;
 }
 .text-part > p {
@@ -195,7 +206,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(40, 40, 40);
+  background-color: rgb(192, 77, 19);
   transform-origin: bottom center;
   transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
   transform: skewY(9.3deg) scaleY(0);
@@ -234,4 +245,136 @@
   .button-57 span:first-child {
     padding: 16px 22px;
   }
+}
+
+/* project section css  */
+.projects-main {
+  width: 100%;
+  height: auto;
+  background-color: rgb(40, 40, 40);
+  overflow-x: hidden;
+}
+.projects {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.projects .header-h1 {
+  margin-bottom: 25px;
+  font-size: 70px;
+  letter-spacing: 4px;
+  color: rgb(192, 77, 19);
+}
+.project-one {
+  margin-right: 10%;
+  margin-bottom: 10%;
+  z-index: 5;
+  max-width: 1000px;
+  position: relative;
+  height: 500px;
+  background-image: url("../images/project-one.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: white;
+}
+.project-one::after {
+  content: "";
+  color: #fff;
+  position: absolute;
+  background: #1f1f1f9a;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scaleX(1);
+}
+.project-one-content {
+  width: 500px;
+  height: 100%;
+  position: relative;
+  float: left;
+  z-index: 5;
+}
+.project-one-content h1 {
+  position: absolute;
+  top: -10%;
+  left: -3%;
+  font-size: 100px;
+  display: none;
+  transform: all 0.5s;
+}
+.project-one-content p {
+  position: absolute;
+  bottom: 20%;
+  text-align: left;
+  margin-left: 5%;
+  display: none;
+  transform: all 0.5s;
+}
+.project-button {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  display: none;
+  transform: all 0.5s;
+}
+.github {
+  position: absolute;
+  color: white;
+  bottom: 5%;
+  left: 35%;
+  font-size: 40px;
+  display: none;
+  transform: all 0.5s;
+}
+.urllink {
+  position: absolute;
+  color: white;
+  bottom: 5%;
+  left: 45%;
+  font-size: 38px;
+  display: none;
+  transform: all 0.5s;
+}
+.req {
+  position: absolute;
+  bottom: 28%;
+  left: 4%;
+  min-width: 200px;
+  font-size: 50px;
+  display: flex;
+  justify-content: space-around;
+  display: none;
+}
+.req img {
+  height: 50px;
+}
+.project-one:hover .urllink {
+  display: block;
+}
+.project-one:hover .github {
+  display: block;
+}
+.project-one:hover .project-one-content h1 {
+  display: block;
+}
+.project-one:hover .project-one-content p {
+  display: block;
+}
+.project-one:hover .project-button {
+  display: block;
+}
+.project-one:hover .req {
+  display: block;
+}
+.github:hover {
+  color: rgb(192, 77, 19);
+  cursor: pointer;
+}
+.urllink:hover {
+  color: rgb(192, 77, 19);
+  cursor: pointer;
 }

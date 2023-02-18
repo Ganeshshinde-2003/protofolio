@@ -4,7 +4,13 @@ import { Link } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { GoThreeBars } from "react-icons/go";
 import { FaTimes } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { SiHtml5 } from "react-icons/si";
+import javasc from "../images/javascript-logo.png";
 import bitemoji from "../images/bitemoji2.png";
+import csslogo from "../images/css-logo.png";
+import { FaReact } from "react-icons/fa";
 import "./home.css";
 
 const Home = () => {
@@ -12,6 +18,8 @@ const Home = () => {
     "Web Developer",
     "Front-End Developer",
     "Back-End Developer",
+    "Full-Stack",
+    "Problem Solver",
     "Coder",
   ];
   const [show, setShow] = useState(true);
@@ -20,7 +28,7 @@ const Home = () => {
   let i = 0;
   useEffect(() => {
     const intervalID = setInterval(() => {
-      if (i !== 4) {
+      if (i !== list.length) {
         setMe(list[i]);
         i = i + 1;
       } else {
@@ -78,10 +86,14 @@ const Home = () => {
               I’m a software developer and here is my portfolio website. Here
               you’ll learn about my journey as a software developer.
             </p>
-            <button class="button-57" role="button">
+            <Link
+              class="button-57"
+              role="button"
+              to="https://www.linkedin.com/in/ganesh-shinde-01380825b/"
+            >
               <span class="text">Hire Me</span>
               <span>Quick</span>
-            </button>
+            </Link>
           </div>
           <div className="image-part">
             <h1 className="name">
@@ -89,6 +101,44 @@ const Home = () => {
               <br /> <span className="lastname">Shinde</span>
             </h1>
             <img className="imageofmine" src={bitemoji} />
+          </div>
+        </div>
+      </div>
+      <div className="projects-main">
+        <div className="projects">
+          <h1 className="header-h1">Projects</h1>
+          <div className="project-one">
+            <div className="project-one-content">
+              <h1>01</h1>
+              <div className="req">
+                <span>
+                  <SiHtml5 />
+                </span>
+                <img src={csslogo} className="css-logo" />
+                <img className="jacascript-logo" src={javasc} />
+                <span>
+                  <FaReact />
+                </span>
+              </div>
+              <p>
+                This is a plataform where people can communicate with each
+                other. So called Twitter like clone
+              </p>
+              <Link
+                class="button-57 project-button"
+                role="button"
+                to="https://github.com/Ganeshshinde-2003/Post-Your-Tweets"
+              >
+                <span class="text">More</span>
+                <span>Click Me</span>
+              </Link>
+              <Link to="https://github.com/Ganeshshinde-2003/Post-Your-Tweets">
+                <FaGithub className="github" />
+              </Link>
+              <Link to="https://react-course-2-4157f.web.app/">
+                <FaExternalLinkAlt className="urllink" />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
