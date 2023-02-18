@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Tourney:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 .home {
   position: relative;
   width: 100%;
+  background-color: rgb(48, 48, 48);
+  font-family: "Abril Fatface", cursive;
 }
 
 .header-home {
@@ -8,7 +12,7 @@
   height: 100px;
   margin: 0 auto;
   max-width: 1000px;
-  background-color: rgb(36, 34, 34);
+  background-color: rgb(40, 40, 40);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -41,6 +45,7 @@
 }
 .right-navbar {
   position: relative;
+  /* z-index: 100; */
 }
 @media screen and (max-width: 640px) {
   .header-home {
@@ -51,16 +56,18 @@
     display: block;
   }
   .Links {
+    z-index: 200;
     position: absolute;
-    margin-top: 2rem;
+    margin-top: 2.4rem;
     display: flex;
     flex-direction: column;
     margin-left: -5rem;
     display: none;
     padding: 20px 30px;
-    background-color: rgb(36, 34, 34);
+    background-color: rgb(40, 40, 40);
   }
   .header-links {
+    /* z-index: 100; */
     color: white;
     text-align: left;
   }
@@ -70,18 +77,41 @@
   height: auto;
 }
 .hero-section-one {
-  width: 1000px;
-  height: 400px;
+  max-width: 1000px;
+  height: 100%;
   display: flex;
   margin: 0 auto;
 }
 .text-part {
   width: 50%;
   height: 100%;
-  background-color: yellow;
+  background-color: rgb(48, 48, 48);
 }
 .image-part {
+  position: relative;
   width: 50%;
   height: 100%;
-  background-color: red;
+  background-color: rgb(48, 48, 48);
+}
+.name {
+  position: relative;
+  text-transform: capitalize;
+  color: white;
+  font-family: "Abril Fatface", cursive;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  font-size: 90px;
+  font-weight: 100;
+  z-index: -1;
+}
+.firstname {
+  position: absolute;
+  left: -20%;
+}
+.lastname {
+  position: absolute;
+  left: 5%;
+}
+.image-part img {
+  z-index: 5;
 }
