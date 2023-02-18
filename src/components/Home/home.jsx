@@ -39,13 +39,6 @@ const Home = () => {
   return (
     <div className="home">
       <header className="header-home">
-        <div className="back-button">
-          <Link className="home-back" to="/">
-            <FaArrowLeft size={15} />
-            Back
-          </Link>
-        </div>
-
         <div className="right-navbar">
           <div className="bars" onClick={toggleMenu}>
             {menu ? <FaTimes /> : <GoThreeBars />}
@@ -65,16 +58,30 @@ const Home = () => {
             </Link>
           </div>
         </div>
+        <div className="back-button">
+          <Link className="home-back" to="/">
+            <FaArrowLeft size={15} />
+            Back
+          </Link>
+        </div>
       </header>
       <div className="main">
         <div className="hero-section-one">
           <div className="text-part">
-            <h1>Hey!! It's Ganesh</h1>
-            <h2>I am a {me}</h2>
+            <h1>Hey!! Every-One</h1>
+            <span>
+              {" "}
+              <span className="mefirst">I am a </span>
+              <span className="me">{me}</span>
+            </span>
             <p>
               I’m a software developer and here is my portfolio website. Here
               you’ll learn about my journey as a software developer.
             </p>
+            <button class="button-57" role="button">
+              <span class="text">Hire Me</span>
+              <span>Quick</span>
+            </button>
           </div>
           <div className="image-part">
             <h1 className="name">
