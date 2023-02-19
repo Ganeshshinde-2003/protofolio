@@ -68,13 +68,13 @@ const Home = () => {
             {menu ? <FaTimes /> : <GoThreeBars />}
           </div>
           <div className="Links" style={{ display: show ? "flex" : "none" }}>
-            <Link className="header-links" to=".main">
+            <Link className="header-links" to="#main">
               Main
             </Link>
-            <Link className="header-links" to=".project-main">
+            <Link className="header-links" to="#myskilss">
               Skils
             </Link>
-            <Link className="header-links" to="my-skills">
+            <Link className="header-links" to="#myskilss">
               Projects
             </Link>
             <Link className="header-links" to="#">
@@ -89,7 +89,7 @@ const Home = () => {
           </Link>
         </div>
       </header>
-      <div className="main">
+      <div className="main" id="main">
         <div className="hero-section-one">
           <div className="text-part">
             <h1>Hey!! Every-One</h1>
@@ -120,7 +120,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="projects-main">
+      <div className="projects-main" id="projects">
         <div className="projects">
           <h1 className="header-h1">Projects</h1>
           <div className="project-one">
@@ -259,7 +259,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      <div className="my-skills">
+      <div className="my-skills" id="myskilss">
         <div className="text-area">
           <span className="text-area-header">Me and MyTech Stack</span>
           <p>
