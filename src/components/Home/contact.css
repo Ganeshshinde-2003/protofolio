@@ -66,6 +66,7 @@
   max-width: 1000px;
 }
 .left-footer {
+  position: relative;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -88,4 +89,22 @@
 .footer-icons :hover {
   color: rgb(192, 77, 19);
   transform: scale(1.1);
+}
+@media screen and (max-width: 800px) {
+  .creat {
+    font-size: 30px;
+  }
+  .footer h1 {
+    font-size: 20px;
+  }
+  .left-footer {
+    font-size: 10px;
+  }
+  .left-footer h5 {
+    position: absolute;
+    top: 20%;
+  }
+  .right-footer {
+    font-size: 25px;
+  }
 }

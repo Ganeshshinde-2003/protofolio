@@ -93,7 +93,7 @@
 }
 .hero-section-one {
   max-width: 1000px;
-  height: 100%;
+  height: auto;
   display: flex;
   margin: 0 auto;
 }
@@ -242,8 +242,9 @@
     font-size: 14px;
     font-weight: 100;
   }
-  .button-57 span:first-child {
-    padding: 16px 22px;
+  .button-57 {
+    font-size: 12px;
+    padding: 10px 8px;
   }
 }
 
@@ -268,7 +269,7 @@
   color: rgb(192, 77, 19);
 }
 .project-one {
-  margin-right: 10%;
+  margin-right: 8%;
   margin-bottom: 10%;
   z-index: 5;
   max-width: 1000px;
@@ -385,7 +386,7 @@
 
 .two {
   margin-right: 0%;
-  margin-left: 10%;
+  margin-left: 8%;
   background-image: url("../images/project-two.png");
 }
 .req-header {
@@ -449,6 +450,71 @@
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 }
 
+@media screen and (max-width: 640px) {
+  .project-one {
+    margin-right: 0%;
+    height: 170px;
+  }
+  .two {
+    margin-left: 0%;
+  }
+  .projects .header-h1 {
+    font-size: 50px;
+  }
+  .project-one-content h1 {
+    font-size: 30px;
+    top: -10%;
+    left: 0%;
+  }
+  .req-header {
+    display: none;
+  }
+  #project-p-tag {
+    display: none;
+  }
+  .req {
+    font-size: 25px;
+  }
+  .req img {
+    height: 28px;
+  }
+  .project-button {
+    padding: 10px 10px;
+  }
+  .github,
+  .urllink {
+    font-size: 30px;
+    left: 28%;
+  }
+  .urllink {
+    left: 36%;
+  }
+  .two .project-one-content h1 {
+    left: 6%;
+  }
+  #project-two-p {
+    display: none;
+  }
+  .two .project-one-content .req {
+    left: 28%;
+  }
+  .two .project-one-content .project-button {
+    left: 28%;
+  }
+  .two .project-one-content .github {
+    left: 50%;
+  }
+  .two .project-one-content .urllink {
+    left: 58%;
+  }
+  #project-three-p {
+    display: none;
+  }
+  #project-four-p {
+    display: none;
+  }
+}
+
 /* me and my skill */
 
 .my-skills {
@@ -456,10 +522,10 @@
   max-width: 1000px;
   margin: 0 auto;
   /* background-color: red; */
-  height: 500px;
+  height: auto;
 }
 .text-area {
-  max-width: 50%;
+  width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -581,4 +647,30 @@ img#img-fifth {
 }
 img#img-fifth:hover {
   transform: scale(1.5);
+}
+
+@media screen and (max-width: 1000px) {
+  .projects {
+    margin-bottom: 25px;
+  }
+  .button-55 {
+    bottom: -1.5%;
+  }
+  .my-skills {
+    flex-direction: column;
+    height: auto;
+  }
+  .text-area {
+    width: 100%;
+    font-size: 15px;
+  }
+  .text-area-header {
+    font-size: 20px;
+  }
+  .text-area :nth-child(1)::first-letter {
+    font-size: 50px;
+  }
+  .skills-area {
+    width: 100%;
+  }
 }

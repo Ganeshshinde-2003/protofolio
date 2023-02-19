@@ -36,7 +36,7 @@ const Home = () => {
     "Back-End Developer",
     "Full-Stack",
     "Problem Solver",
-    "FireBase",
+    "FireBase User",
     "Coder",
   ];
   const [show, setShow] = useState(true);
@@ -138,9 +138,9 @@ const Home = () => {
                   <FaReact />
                 </span>
               </div>
-              <p>
+              <p id="project-p-tag">
                 This is a plataform where people can communicate with each
-                other. So called Twitter like clone
+                other. So called Twitter clone
               </p>
               <Link
                 class="button-57 project-button"
@@ -172,7 +172,9 @@ const Home = () => {
                   <FaReact />
                 </span>
               </div>
-              <p>A music app built by me. So called Spotify like clone</p>
+              <p id="project-two-p">
+                A music app built by me. So called Spotify like clone
+              </p>
               <Link
                 class="button-57 project-button"
                 role="button"
@@ -199,7 +201,7 @@ const Home = () => {
                 </span>
                 <img src={csslogo} className="css-logo" />
               </div>
-              <p>
+              <p id="project-three-p">
                 This is my first clone website. A perfect clone of starbucks.
                 Even you can use it to order Coffee or Tea
               </p>
@@ -233,7 +235,9 @@ const Home = () => {
                   <FaReact />
                 </span>
               </div>
-              <p>A music app built by me. So called Spotify like clone</p>
+              <p id="project-four-p">
+                A music app built by me. So called Spotify clone
+              </p>
               <Link
                 class="button-57 project-button"
                 role="button"
@@ -265,7 +269,7 @@ const Home = () => {
           <span className="text-area-header">Me and MyTech Stack</span>
           <p>
             Hi Everyone My name is Ganesh Shinde I am a Full Stack Web Developer
-            I have been working for last 1 Years and Currently I am just a
+            I have been learning for last 1 Years and Currently I am just a
             student who is very interested web development. Now I am working
             Angular, ReactJS and Node, Express for Back-End development
           </p>
