@@ -10,6 +10,21 @@ import { SiHtml5 } from "react-icons/si";
 import javasc from "../images/javascript-logo.png";
 import bitemoji from "../images/bitemoji2.png";
 import csslogo from "../images/css-logo.png";
+import angular from "../images/skills-image/angular.png";
+import c from "../images/skills-image/c.png";
+import css from "../images/skills-image/css.png";
+import ex from "../images/skills-image/express.png";
+import fair from "../images/skills-image/fairbase.png";
+import git from "../images/skills-image/git.png";
+import gitlab from "../images/skills-image/gitlab.png";
+import html from "../images/skills-image/html.png";
+import java from "../images/skills-image/javascript.png";
+import mongo from "../images/skills-image/mongodb.png";
+import python from "../images/skills-image/python.png";
+import react from "../images/skills-image/reactjs.png";
+import tailwind from "../images/skills-image/tailwind.png";
+import vscode from "../images/skills-image/vscode.png";
+import node from "../images/skills-image/node.png";
 import { FaReact } from "react-icons/fa";
 import "./home.css";
 
@@ -53,13 +68,13 @@ const Home = () => {
             {menu ? <FaTimes /> : <GoThreeBars />}
           </div>
           <div className="Links" style={{ display: show ? "flex" : "none" }}>
-            <Link className="header-links" to="#">
+            <Link className="header-links" to=".main">
               Main
             </Link>
-            <Link className="header-links" to="#">
+            <Link className="header-links" to=".project-main">
               Skils
             </Link>
-            <Link className="header-links" to="#">
+            <Link className="header-links" to="my-skills">
               Projects
             </Link>
             <Link className="header-links" to="#">
@@ -242,6 +257,42 @@ const Home = () => {
           >
             More Projects
           </Link>
+        </div>
+      </div>
+      <div className="my-skills">
+        <div className="text-area">
+          <span className="text-area-header">Me and MyTech Stack</span>
+          <p>
+            Hi Everyone My name is Ganesh Shinde I am a Full Stack Web Developer
+            I have been working for last 1 Years and Currently I am just a
+            student who is very interested web development. Now I am working
+            Angular, ReactJS and Node, Express for Back-End development
+          </p>
+          <p>
+            There are many programming languages in the world but i choose these
+            to improve my self in this competitive world{" "}
+            <span>
+              C, Python, Java Script, HTML, CSS, Tailwind, ReactJS, TypeScript,
+              Angular, NodeJS, ExpressJS...{" "}
+            </span>
+          </p>
+        </div>
+        <div className="skills-area">
+          <img id="img-one" src={html} />
+          <img id="img-two" src={css} />
+          <img id="img-three" src={java} />
+          <img id="img-four" src={react} />
+          <img id="img-five" src={angular} />
+          <img id="img-six" src={tailwind} />
+          <img id="img-seven" src={node} />
+          <img id="img-eight" src={ex} />
+          <img id="img-nine" src={c} />
+          <img id="img-ten" src={python} />
+          <img id="img-eleven" src={vscode} />
+          <img id="img-twello" src={git} />
+          <img id="img-thirthin" src={gitlab} />
+          <img id="img-fourth" src={fair} />
+          <img id="img-fifth" src={mongo} />
         </div>
       </div>
     </div>

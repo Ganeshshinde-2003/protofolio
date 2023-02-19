@@ -255,6 +255,7 @@
   overflow-x: hidden;
 }
 .projects {
+  position: relative;
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
@@ -408,7 +409,7 @@
 .button-55 {
   position: absolute;
   bottom: 1%;
-  right: 19%;
+  right: 0%;
   align-self: center;
   background-color: #fff;
   background-image: none;
@@ -446,4 +447,138 @@
 
 .button-55:focus {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
+
+/* me and my skill */
+
+.my-skills {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  /* background-color: red; */
+  height: 500px;
+}
+.text-area {
+  max-width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+  padding: 0 20px;
+  color: white;
+  font-size: 20px;
+}
+.text-area-header {
+  font-size: 35px;
+  color: rgb(192, 77, 19);
+}
+.text-area :nth-child(1)::first-letter {
+  font-size: 75px;
+}
+.skills-area img {
+  height: 40px;
+  margin: 20px 20px;
+}
+.skills-area {
+  width: 50%;
+  display: grid;
+  justify-content: space-around;
+  padding: 0 10px;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+img#img-one {
+  transition: all 0.5s ease-in-out;
+}
+img#img-one:hover {
+  transform: scale(1.5);
+}
+img#img-two {
+  transition: all 0.5s ease-in-out;
+}
+img#img-two:hover {
+  transform: scale(1.5);
+}
+
+img#img-three {
+  transition: all 0.5s ease-in-out;
+}
+img#img-three:hover {
+  transform: scale(1.5);
+}
+
+img#img-four {
+  transition: all 0.5s ease-in-out;
+}
+img#img-four:hover {
+  transform: scale(1.5);
+}
+img#img-five {
+  transition: all 0.5s ease-in-out;
+}
+img#img-five:hover {
+  transform: scale(1.5);
+}
+img#img-six {
+  transition: all 0.5s ease-in-out;
+}
+img#img-six:hover {
+  transform: scale(1.5);
+}
+img#img-seven {
+  transition: all 0.5s ease-in-out;
+}
+img#img-seven:hover {
+  transform: scale(1.5);
+}
+img#img-eight {
+  transition: all 0.5s ease-in-out;
+}
+img#img-eight:hover {
+  transform: scale(1.5);
+}
+img#img-nine {
+  transition: all 0.5s ease-in-out;
+}
+img#img-nine:hover {
+  transform: scale(1.5);
+}
+img#img-ten {
+  transition: all 0.5s ease-in-out;
+}
+img#img-ten:hover {
+  transform: scale(1.5);
+}
+img#img-eleven {
+  transition: all 0.5s ease-in-out;
+}
+img#img-eleven:hover {
+  transform: scale(1.5);
+}
+img#img-twello {
+  transition: all 0.5s ease-in-out;
+}
+img#img-twello:hover {
+  transform: scale(1.5);
+}
+img#img-thirthin {
+  transition: all 0.5s ease-in-out;
+}
+img#img-thirthin:hover {
+  transform: scale(1.5);
+}
+img#img-fourth {
+  transition: all 0.5s ease-in-out;
+}
+img#img-fourth:hover {
+  transform: scale(1.5);
+}
+img#img-fifth {
+  transition: all 0.5s ease-in-out;
+}
+img#img-fifth:hover {
+  transform: scale(1.5);
 }
