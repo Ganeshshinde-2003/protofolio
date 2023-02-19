@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import "./contact.css";
 import { useForm } from "react-hook-form";
 import { FaGithub, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { json, Link, Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
+  const navigate = useNavigate();
+  const [details, setDetails] = useState({
+    title: "",
+    email: "",
+    sub: "",
+    discription: "",
+  });
+
   const schema = yup.object().shape({
     title: yup.string().required("*You Must Add A Name..."),
     email: yup.string().required("*You Must Add A Email..."),
@@ -24,7 +33,27 @@ const Contact = () => {
     resolver: yupResolver(schema),
   });
 
-  const onCreatMessage = async (data) => {};
+  const onCreatMessage = async (e) => {
+    // e.preventDefault();
+    const { title, email, sub, discription } = details;
+
+    const res = await fetch(
+      "https://peotofolio-default-rtdb.firebaseio.com/portfolio.json",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          title,
+          email,
+          sub,
+          discription,
+        }),
+      }
+    );
+    navigate("/");
+  };
 
   return (
     <div className="contactme">
@@ -35,6 +64,7 @@ const Contact = () => {
             id="titlename"
             placeholder="Enter Name"
             {...register("title")}
+            onChange={(e) => setDetails({ ...details, title: e.target.value })}
           />
           <p className="errormsg">{errors.title?.message}</p>
           <input
@@ -42,6 +72,7 @@ const Contact = () => {
             type="email"
             placeholder="Enter Your Email"
             {...register("email")}
+            onChange={(e) => setDetails({ ...details, email: e.target.value })}
           />
           <p className="errormsg">{errors.email?.message}</p>
           <input
@@ -49,6 +80,7 @@ const Contact = () => {
             id="subjectname"
             placeholder="Enter The Subject"
             {...register("sub")}
+            onChange={(e) => setDetails({ ...details, sub: e.target.value })}
           />
           <p className="errormsg">{errors.sub?.message}</p>
           <textarea
@@ -58,6 +90,9 @@ const Contact = () => {
             rows={10}
             draggable={false}
             {...register("discription")}
+            onChange={(e) =>
+              setDetails({ ...details, discription: e.target.value })
+            }
           />
           <p className="errormsg">{errors.discription?.message}</p>
           <input
