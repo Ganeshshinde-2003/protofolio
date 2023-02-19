@@ -5,16 +5,15 @@ import "./contact.css";
 import { useForm } from "react-hook-form";
 import { FaGithub, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import firebase from "./firebase.js";
 
 const Contact = () => {
   const schema = yup.object().shape({
-    title: yup.string().required("You Must Add A Name..."),
-    email: yup.string().required("You Must Add A Email..."),
-    sub: yup.string(),
-    description: yup
+    title: yup.string().required("*You Must Add A Name..."),
+    email: yup.string().required("*You Must Add A Email..."),
+    sub: yup.string().required("*You Must Add A Subject..."),
+    discription: yup
       .string()
-      .required("You Must Add A Description About Your Post"),
+      .required("*You Must Add A Description About Your Post"),
   });
 
   const {
@@ -25,20 +24,7 @@ const Contact = () => {
     resolver: yupResolver(schema),
   });
 
-  const onCreatMessage = async (data) => {
-    // // const data2 = {
-    // //   title: data.title,
-    // //   email: data.email,
-    // //   sub: data.sub,
-    // //   discription: data.discription,
-    // // };
-    // await addDoc(collection(db, "message"), {
-    //   title: data.title,
-    //   email: data.email,
-    //   sub: data.sub,
-    //   discription: data.discription,
-    // });
-  };
+  const onCreatMessage = async (data) => {};
 
   return (
     <div className="contactme">
@@ -50,20 +36,21 @@ const Contact = () => {
             placeholder="Enter Name"
             {...register("title")}
           />
-          <p>{errors.title?.message}</p>
+          <p className="errormsg">{errors.title?.message}</p>
           <input
             id="emailname"
             type="email"
             placeholder="Enter Your Email"
             {...register("email")}
           />
-          <p>{errors.email?.message}</p>
+          <p className="errormsg">{errors.email?.message}</p>
           <input
             type="text"
             id="subjectname"
             placeholder="Enter The Subject"
             {...register("sub")}
           />
+          <p className="errormsg">{errors.sub?.message}</p>
           <textarea
             id="textareadis"
             placeholder="Description..."
@@ -72,7 +59,7 @@ const Contact = () => {
             draggable={false}
             {...register("discription")}
           />
-          <p>{errors.discription?.message}</p>
+          <p className="errormsg">{errors.discription?.message}</p>
           <input
             id="submit"
             class="button-57"

@@ -90,6 +90,9 @@
   color: rgb(192, 77, 19);
   transform: scale(1.1);
 }
+.errormsg {
+  color: red;
+}
 @media screen and (max-width: 800px) {
   .creat {
     font-size: 30px;
