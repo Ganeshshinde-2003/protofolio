@@ -20,6 +20,7 @@ const Home = () => {
     "Back-End Developer",
     "Full-Stack",
     "Problem Solver",
+    "FireBase",
     "Coder",
   ];
   const [show, setShow] = useState(true);
@@ -111,6 +112,7 @@ const Home = () => {
             <div className="project-one-content">
               <h1>01</h1>
               <div className="req">
+                <span className="req-header">Programming Languages used</span>
                 <span>
                   <SiHtml5 />
                 </span>
@@ -140,6 +142,106 @@ const Home = () => {
               </Link>
             </div>
           </div>
+          <div className="project-one two">
+            <div className="project-one-content">
+              <h1>02</h1>
+              <div className="req">
+                <span className="req-header">Programming Languages used</span>
+                <span>
+                  <SiHtml5 />
+                </span>
+                <img src={csslogo} className="css-logo" />
+                <img className="jacascript-logo" src={javasc} />
+                <span>
+                  <FaReact />
+                </span>
+              </div>
+              <p>A music app built by me. So called Spotify like clone</p>
+              <Link
+                class="button-57 project-button"
+                role="button"
+                to="https://github.com/Ganeshshinde-2003/amazon-starterpack"
+              >
+                <span class="text">More</span>
+                <span>Click Me</span>
+              </Link>
+              <Link to="https://github.com/Ganeshshinde-2003/amazon-starterpack">
+                <FaGithub className="github" />
+              </Link>
+              <Link to="https://my-music-gani.netlify.app/">
+                <FaExternalLinkAlt className="urllink" />
+              </Link>
+            </div>
+          </div>
+          <div className="project-one three">
+            <div className="project-one-content">
+              <h1>03</h1>
+              <div className="req">
+                <span className="req-header">Programming Languages used</span>
+                <span>
+                  <SiHtml5 />
+                </span>
+                <img src={csslogo} className="css-logo" />
+              </div>
+              <p>
+                This is my first clone website. A perfect clone of starbucks.
+                Even you can use it to order Coffee or Tea
+              </p>
+              <Link
+                class="button-57 project-button"
+                role="button"
+                to="https://github.com/Ganeshshinde-2003/starbucks-clone"
+              >
+                <span class="text">More</span>
+                <span>Click Me</span>
+              </Link>
+              <Link to="https://github.com/Ganeshshinde-2003/starbucks-clone">
+                <FaGithub className="github" />
+              </Link>
+              <Link to="https://ganesh-starbucks-clone.netlify.app/">
+                <FaExternalLinkAlt className="urllink" />
+              </Link>
+            </div>
+          </div>
+          <div className="project-one two four">
+            <div className="project-one-content">
+              <h1>04</h1>
+              <div className="req">
+                <span className="req-header">Programming Languages used</span>
+                <span>
+                  <SiHtml5 />
+                </span>
+                <img src={csslogo} className="css-logo" />
+                <img className="jacascript-logo" src={javasc} />
+                <span>
+                  <FaReact />
+                </span>
+              </div>
+              <p>A music app built by me. So called Spotify like clone</p>
+              <Link
+                class="button-57 project-button"
+                role="button"
+                to="https://github.com/Ganeshshinde-2003/amazon-starterpack"
+              >
+                <span class="text">More</span>
+                <span>Click Me</span>
+              </Link>
+              <Link to="https://github.com/Ganeshshinde-2003/amazon-starterpack">
+                <FaGithub className="github" />
+              </Link>
+              <Link to="https://amazonmini.pages.dev/">
+                <FaExternalLinkAlt className="urllink" />
+              </Link>
+            </div>
+          </div>
+          <Link
+            className="projects-page"
+            class="button-55"
+            role="button"
+            to="/home/projectpages"
+          >
+            More Projects
+          </Link>
         </div>
       </div>
     </div>
