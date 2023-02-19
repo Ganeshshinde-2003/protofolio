@@ -34,12 +34,12 @@
   transition: 0.3s linear;
 }
 .header-links:hover {
-  color: brown;
-  border-bottom: 2px solid brown;
+  color: rgb(192, 77, 19);
+  border-bottom: 2px solid rgb(192, 77, 19);
 }
 .home-back:hover {
-  color: brown;
-  border-bottom: 2px solid brown;
+  color: rgb(192, 77, 19);
+  border-bottom: 2px solid rgb(192, 77, 19);
 }
 .Links {
   display: flex;

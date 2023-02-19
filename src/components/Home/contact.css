@@ -2,7 +2,6 @@
   background-color: rgb(40, 40, 40);
   width: 100%;
   height: auto;
-  padding-bottom: 10%;
 }
 .formFill {
   max-width: 1000px;
@@ -10,8 +9,10 @@
   padding: 5%;
 }
 .creat {
-  font-size: 40px;
+  font-size: 50px;
   margin-bottom: 40px;
+  color: rgb(112, 103, 103);
+  letter-spacing: 2px;
 }
 #formcreate {
   display: flex;
@@ -21,6 +22,7 @@
 #emailname,
 #subjectname,
 #textareadis {
+  border: none;
   padding: 10px;
   border-radius: 10px;
   box-shadow: rgb(192, 77, 19) 0px 5px 15px;
@@ -28,8 +30,10 @@
 }
 #submit {
   align-self: flex-start;
+  color: rgb(112, 103, 103);
   transition: all 0.3s;
   padding: 8px 20px;
+  border: none;
   border-radius: 10px;
 }
 #submit:hover {
@@ -37,4 +41,51 @@
   background-color: rgb(192, 77, 19);
   color: white;
   box-shadow: rgb(192, 77, 19) 0px 5px 15px;
+}
+
+/* footer part */
+
+.footer {
+  position: relative;
+  background-color: rgb(26, 25, 25);
+  width: 100%;
+}
+.footer h1 {
+  position: absolute;
+  color: rgb(112, 103, 103);
+  bottom: 0%;
+  font-size: 55px;
+  left: 0.5%;
+  user-select: none;
+}
+.footer-container {
+  color: rgb(167, 157, 157);
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  max-width: 1000px;
+}
+.left-footer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  user-select: none;
+}
+.right-footer {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 40px;
+}
+.footer-icons {
+  color: rgb(167, 157, 157);
+  transition: all 1s;
+}
+.footer-icons :hover {
+  color: rgb(192, 77, 19);
+  transform: scale(1.1);
 }
