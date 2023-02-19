@@ -27,6 +27,7 @@ import vscode from "../images/skills-image/vscode.png";
 import node from "../images/skills-image/node.png";
 import { FaReact } from "react-icons/fa";
 import "./home.css";
+import Contact from "./contact";
 
 const Home = () => {
   const list = [
@@ -295,6 +296,7 @@ const Home = () => {
           <img id="img-fifth" src={mongo} />
         </div>
       </div>
+      <Contact />
     </div>
   );
 };

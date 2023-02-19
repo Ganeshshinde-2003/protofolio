@@ -1,0 +1,40 @@
+.contactme {
+  background-color: rgb(40, 40, 40);
+  width: 100%;
+  height: auto;
+  padding-bottom: 10%;
+}
+.formFill {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 5%;
+}
+.creat {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+#formcreate {
+  display: flex;
+  flex-direction: column;
+}
+#titlename,
+#emailname,
+#subjectname,
+#textareadis {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgb(192, 77, 19) 0px 5px 15px;
+  margin-bottom: 25px;
+}
+#submit {
+  align-self: flex-start;
+  transition: all 0.3s;
+  padding: 8px 20px;
+  border-radius: 10px;
+}
+#submit:hover {
+  transform: scale (1.1);
+  background-color: rgb(192, 77, 19);
+  color: white;
+  box-shadow: rgb(192, 77, 19) 0px 5px 15px;
+}
