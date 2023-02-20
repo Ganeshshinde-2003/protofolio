@@ -1,3 +1,71 @@
-.projectpage {
-  height: 100px;
+.projectpage-container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(36, 34, 34);
+  overflow-x: hidden;
+  padding: 100px 100px;
+  position: relative;
+}
+.projectspage-wrapper {
+  max-width: 1000px;
+  height: auto;
+  gap: 35px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.project-five {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.imageofproject {
+  width: 50%;
+}
+.project-image {
+  width: 100%;
+}
+.about-project {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30%;
+}
+.about-project-p {
+  color: white;
+  font-size: 22px;
+  text-align: left;
+  padding: 0 28px;
+}
+.project-page-links {
+  display: flex;
+  float: left;
+  justify-content: space-evenly;
+}
+.github-page,
+.urllink-page {
+  font-size: 40px;
+  color: white;
+}
+.github-page:hover,
+.urllink-page:hover {
+  color: rgb(192, 77, 19);
+}
+.moretocome {
+  position: relative;
+}
+.moretocome h1 {
+  position: absolute;
+  bottom: 47%;
+  color: green;
+  left: 24%;
+  font-size: 26px;
+}
+.project-page-back-button {
+  position: absolute;
+  left: 10%;
+  font-size: 21px;
+  top: 7%;
 }
