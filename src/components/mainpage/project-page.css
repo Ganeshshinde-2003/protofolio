@@ -67,5 +67,34 @@
   position: absolute;
   left: 10%;
   font-size: 21px;
-  top: 7%;
+  top: 4%;
+}
+
+@media screen and (max-width: 700px) {
+  .project-five {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .project-image {
+    width: 100%;
+  }
+  .imageofproject {
+    width: 100%;
+  }
+  .about-project {
+    width: 100%;
+    gap: 14px;
+  }
+  .about-project-p {
+    font-size: 10px;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 300px) {
+  .projectpage-container {
+    padding: 10px 10px;
+  }
+  .projectspage-wrapper {
+    margin-top: 24%;
+  }
 }
