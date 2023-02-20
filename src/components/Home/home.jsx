@@ -270,13 +270,13 @@ const Home = () => {
           <p>
             Hi Everyone My name is Ganesh Shinde I am a Full Stack Web Developer
             I have been learning for last 1 Years and Currently I am just a
-            student who is very interested web development. Now I am working
-            Angular, ReactJS and Node, Express for Back-End development
+            student who is very interested in web development. Now I am working
+            on Angular, ReactJS and Node, Express for Back-End development
           </p>
           <p>
             There are many programming languages in the world but i choose these
-            to improve my self in this competitive world{" "}
-            <span>
+            to improve my self in this competitive world .
+            <span id="coding">
               C, Python, Java Script, HTML, CSS, Tailwind, ReactJS, TypeScript,
               Angular, NodeJS, ExpressJS...{" "}
             </span>

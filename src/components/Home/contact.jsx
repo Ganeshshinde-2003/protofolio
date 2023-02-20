@@ -85,7 +85,7 @@ const Contact = () => {
           <p className="errormsg">{errors.sub?.message}</p>
           <textarea
             id="textareadis"
-            placeholder="Description..."
+            placeholder={`Subject Description: ${details.sub}`}
             cols={40}
             rows={10}
             draggable={false}
