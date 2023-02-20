@@ -3,6 +3,7 @@ import Mainpage from "./components/mainpage/mainpage";
 import Home from "./components/Home/home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProjectPage from "./components/mainpage/project-page";
+import Everything from "./components/Home/everything";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
           <Route path="/home" element={<Home />} />
 
           <Route path="/home/projectpages" element={<ProjectPage />} />
+
+          <Route path="*" element={<Everything />} />
         </Routes>
       </Router>
     </div>
