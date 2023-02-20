@@ -13,6 +13,7 @@
   margin-bottom: 40px;
   color: rgb(112, 103, 103);
   letter-spacing: 2px;
+  user-select: none;
 }
 #formcreate {
   display: flex;
