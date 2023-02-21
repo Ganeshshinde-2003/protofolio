@@ -232,10 +232,10 @@
     font-weight: lighter;
   }
   .text-part .mefirst {
-    font-size: 24px;
+    font-size: 42px;
   }
   .text-part .me {
-    font-size: 24px;
+    font-size: 20px;
   }
   .text-part > p {
     font-size: 14px;
@@ -654,7 +654,7 @@ img#img-fifth:hover {
 
 @media screen and (max-width: 1000px) {
   .projects {
-    margin-bottom: 25px;
+    margin-bottom: 40px;
   }
   .button-55 {
     bottom: -1.5%;

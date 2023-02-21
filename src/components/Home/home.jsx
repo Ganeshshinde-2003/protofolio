@@ -31,9 +31,9 @@ import Contact from "./contact";
 
 const Home = () => {
   const list = [
-    "Web Developer",
-    "Front-End Developer",
-    "Back-End Developer",
+    "Web Dev",
+    "Front-End",
+    "Back-End",
     "Full-Stack",
     "Problem Solver",
     "FireBase User",
@@ -69,16 +69,16 @@ const Home = () => {
             {menu ? <FaTimes /> : <GoThreeBars />}
           </div>
           <div className="Links" style={{ display: show ? "flex" : "none" }}>
-            <Link className="header-links" to="#main">
+            <Link to="#main" className="header-links">
               Main
             </Link>
-            <Link className="header-links" to="#myskilss">
+            <Link to="#myskilss" className="header-links">
               Skils
             </Link>
-            <Link className="header-links" to="#myskilss">
+            <Link to="#myskilss" className="header-links">
               Projects
             </Link>
-            <Link className="header-links" to="#">
+            <Link to="#contact" className="header-links">
               Contact me
             </Link>
           </div>
@@ -300,7 +300,7 @@ const Home = () => {
           <img id="img-fifth" src={mongo} />
         </div>
       </div>
-      <Contact />
+      <Contact id="contact" />
     </div>
   );
 };
