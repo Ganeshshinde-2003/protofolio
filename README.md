@@ -1,5 +1,10 @@
 <h1>The Link For Cite => </h1> <h4>https://peotofolio.web.app/</h4>
 
+<h3>I'm thrilled to present my portfolio to you all. I've put in a lot of effort as a student to hone my abilities and create a solid body of work that demonstrates my knowledge and creativity.
+My best work is showcased in my portfolio, which includes Twitter Clone. Each project showcases my own methodology and exhibits my skills.
+I urge you to look through my portfolio to get a better idea of what I'm capable of, whether you're a prospective employer, client, or simply someone who wants to learn more about my work. Please don't be hesitant to get in touch if you enjoy what you see because I'm constantly seeking for new chances and challenges.
+I appreciate you taking the time to look at my portfolio. I'm eager to communicate with each of you.</h3>
+
 
 # Getting Started with Create React App
 
